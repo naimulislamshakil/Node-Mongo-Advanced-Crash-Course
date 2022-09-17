@@ -1,5 +1,5 @@
 const http = require('http');
-const fs = require('fs');
+const events = require('events');
 const PORT = 5000;
 
 const server = http.createServer((req, res) => {
@@ -9,4 +9,4 @@ const server = http.createServer((req, res) => {
 server.listen(PORT);
 
 console.log(`Server is Running: ${PORT}`);
-// console.log(fs);
+// console.log(events);
